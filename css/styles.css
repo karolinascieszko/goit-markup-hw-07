@@ -100,15 +100,9 @@ img {
 .menu__link:active,
 .modal-btn:focus,
 .modal-btn:active,
-.address-list-item-link-street:hover,
-.address-list-item-link-street:focus,
-.address-list-item-link-street:active,
-.address-list-item-link-e-mail:hover,
-.address-list-item-link-e-mail:focus,
-.address-list-item-link-e-mail:active,
-.address-list-item-link-phone-number:hover,
-.address-list-item-link-phone-number:focus,
-.address-list-item-link-phone-number:active {
+.address__link:hover,
+.address__link:focus,
+.address__link:active {
   color: var(--main-color);
 }
 .contact__link {
@@ -458,21 +452,11 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.address {
+.address-information {
   font-style: normal;
 }
-.address-list-item-link-street {
-  font-size: 14px;
-  line-height: 1.714;
-  color: var(--font-on-dark-theme-color);
-  text-decoration: none;
-  padding-bottom: 9px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.address-list-item-link-e-mail,
-.address-list-item-link-phone-number {
+
+.address__link {
   font-size: 14px;
   line-height: 1.714;
   color: var(--font-contact-footer-color);
@@ -481,7 +465,7 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.address-list {
+.address {
   padding-top: 20px;
 }
 .social__header {
