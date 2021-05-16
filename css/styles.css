@@ -260,11 +260,11 @@ img {
 /*===== END HERO =====*/
 /*===== LOREM IPSUM =====*/
 
-.advantages-list {
+.advantages {
   display: flex;
   justify-content: space-between;
 }
-.advantages-list-item-header {
+.advantages__header {
   display: flex;
   flex-wrap: wrap;
   font-weight: 700;
@@ -277,11 +277,11 @@ img {
   width: 270px;
   padding-top: 30px;
 }
-.advantages-list-item-header:not(:last-child) {
+.advantages__header:not(:last-child) {
   margin-right: 30px;
 }
 
-.advantages-list-item-description {
+.advantages__description {
   display: flex;
   text-align: left;
   font-size: 14px;
@@ -290,13 +290,13 @@ img {
   color: var(--font-in-description-color);
   width: 270px;
 }
-.advantages-icon {
+.advantages__icon {
   width: 70px;
   height: 70px;
   display: block;
 }
 
-.advantages-list-item-icon {
+.advantages__link {
   display: flex;
   width: 270px;
   height: 120px;
@@ -311,11 +311,11 @@ img {
   padding-bottom: 94px;
 }
 
-.about-us-list {
+.about {
   display: flex;
   justify-content: space-between;
 }
-.about-us-list-item:not(:last-child) {
+.about__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -329,7 +329,7 @@ img {
   overflow: hidden;
   background-color: var(--background-color-light);
 }
-.thumb > .label {
+.thumb > .about__label {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -349,30 +349,31 @@ img {
 }
 /*===== END ABOUT US =====*/
 /*===== OUR TEAM =====*/
-.team-list {
+.team {
   display: flex;
   justify-content: space-between;
   background-color: var(--background-color-light);
 }
-.team-list-item {
+.team__item {
   box-shadow: 0px 1px 3px var(--box-shadow-color-first),
     0px 1px 1px var(--box-shadow-color-second),
     0px 2px 1px var(--box-shadow-color-third);
   border-radius: 0px 0px 4px 4px;
 }
-.team-list-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.team-list-item-name {
+.team__name {
   padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
   letter-spacing: 0.03em;
   color: var(--main-font-color);
+  text-align: center;
 }
-.team-list-item-job {
+.team__job {
   font-size: 16px;
   line-height: 1.188;
   letter-spacing: 0.03em;
@@ -380,20 +381,13 @@ img {
   text-align: center;
 }
 
-.team-list-item-name {
-  text-align: center;
-}
-.team {
-  background-color: var(--background-color-team);
-}
-
-.social-list {
+.social {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.social-list-link {
+.social__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -409,15 +403,15 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon {
+.social__icon {
   width: 20px;
   height: 20px;
 }
 
-.social-list-link:hover,
-.social-list-link:focus,
-.social-list-link-dark-theme:hover,
-.social-list-link-dark-theme:focus {
+.social__link:hover,
+.social__link:focus,
+.social__link-dark-theme:hover,
+.social__link-dark-theme:focus {
   fill: var(--font-on-dark-theme-color);
   background-color: var(--main-color);
 }
@@ -425,13 +419,13 @@ img {
 
 /*===== OUR CLIENTS =====*/
 
-.clients-list {
+.clients {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.clients-list-logo {
+.clients__logo {
   display: flex;
   width: 170px;
   height: 92px;
@@ -446,13 +440,13 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-icon {
+.clients__icon {
   width: 106px;
   height: 60px;
 }
 
-.clients-list-logo:hover,
-.clients-list-logo:focus {
+.clients__logo:hover,
+.clients__logo:focus {
   fill: var(--main-color);
   border-color: var(--main-color);
 }
@@ -490,14 +484,23 @@ img {
 .address-list {
   padding-top: 20px;
 }
-.social-links-header {
+.social__header {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--font-on-dark-theme-color);
+  margin-bottom: 20px;
+  padding-left: 10px;
 }
-.social-list-dark-theme {
+.social__link--dark-theme {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+}
+
+/*.social-list-dark-theme {
   display: flex;
 }
 .social-list-link-dark-theme {
@@ -519,7 +522,7 @@ img {
 }
 .social-list-item-dark-theme:not(:last-child) {
   padding-right: 10px;
-}
+}*/
 .footer .container {
   display: flex;
   align-items: baseline;
