@@ -62,7 +62,7 @@ img {
 
 /*===== COMPONENTS=====*/
 
-.navigation-logo {
+.logo {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 26px;
@@ -70,14 +70,15 @@ img {
   text-decoration: none;
   letter-spacing: 0.03em;
   margin-right: 93px;
-}
-.logo-first-word {
   color: var(--main-color);
 }
-.logo-second-word-light-theme {
+.logo__accent-text {
+  color: var(--main-color);
+}
+.logo--light-theme {
   color: var(--main-font-color);
 }
-.logo-second-word-dark-theme {
+.logo--dark-theme {
   color: var(--font-on-dark-theme-color);
 }
 
