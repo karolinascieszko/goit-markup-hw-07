@@ -586,7 +586,7 @@ img {
 }
 
 /*===== PORTFOLIO =====*/
-.buttons-list {
+.buttons {
   display: flex;
   justify-content: center;
   padding-left: 510px;
@@ -595,19 +595,10 @@ img {
   margin-bottom: 50px;
 }
 
-.buttons-list-item-name {
+.buttons__name {
   padding: 6px 22px;
   color: transparent;
   border: none;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.buttons-list-item:not(:last-child) {
-  padding-right: 8px;
-}
-
-.buttons-list-item-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -615,10 +606,17 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-font-color);
   border-radius: 4px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.buttons-list-item-name:hover,
-.buttons-list-item-name:focus,
-.buttons-list-item-name:active {
+.buttons__item:not(:last-child) {
+  padding-right: 8px;
+}
+
+.buttons__name:hover,
+.buttons__name:focus,
+.buttons__name:active {
   color: var(--font-on-dark-theme-color);
   background-color: var(--main-color);
   cursor: pointer;
@@ -627,7 +625,7 @@ img {
 .buttons-list-item:focus {
   box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
 }
-.buttons-list-item {
+.buttons__item {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
