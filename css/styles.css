@@ -621,29 +621,31 @@ img {
   background-color: var(--main-color);
   cursor: pointer;
 }
-.buttons-list-item:hover,
-.buttons-list-item:focus {
+.buttons__item:hover,
+.buttons__item:focus {
   box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
 }
 .buttons__item {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.projects-list {
+.initiatives {
+  margin-bottom: 94px;
+}
+.projects {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 34px;
 }
-.projects-list-item {
+.projects__item {
   border-bottom: 1px solid var(--border-color-cards);
   margin-bottom: 30px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects-list-item-name {
+.projects__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -651,7 +653,7 @@ img {
   color: var(--main-font-color);
   margin-top: 20px;
 }
-.projects-list-item-description {
+.projects__description {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
@@ -659,11 +661,9 @@ img {
   margin-top: 4px;
   margin-bottom: 20px;
 }
-.projects {
-  margin-bottom: 103px;
-}
-.projects-list-item:hover,
-.projects-list-item:focus {
+
+.projects__item:hover,
+.projects__item:focus {
   box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
 }
 
@@ -677,7 +677,7 @@ img {
   overflow: hidden;
 }
 
-.projects-list-item:hover .overlay {
+.projects__item:hover .overlay {
   transform: translatey(0);
 }
 
@@ -693,7 +693,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay > .overlay-text {
+.overlay > .overlay__text {
   color: var(--font-on-dark-theme-color);
   margin: 0;
   position: absolute;
