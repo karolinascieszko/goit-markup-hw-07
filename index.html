@@ -42,7 +42,7 @@
         <ul class="contact list">
           <li class="contact__item">
             <a class="contact__link" href="mailto:info@devstudio.com"
-              ><svg class="icon-envelope">
+              ><svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
@@ -50,7 +50,7 @@
 
           <li class="contact__item">
             <a class="contact__link" href="tel:+48111111111"
-              ><svg class="icon-smartphone">
+              ><svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+48 111 111 111</a
             >
@@ -59,17 +59,18 @@
       </div>
     </header>
     <main>
-      <!-- HERO-->
+      <!--------- HERO----------------->
 
       <section class="hero">
         <div class="container">
           <h1 class="main-header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="modal-btn" type="button" data-modal-open>
+          <button class="btn hero__btn" type="button" data-modal-open>
             Zamów usługe
           </button>
         </div>
       </section>
-      <!--LOREM IPSUM-->
+
+      <!--------LOREM IPSUM-------->
 
       <section class="strengths section">
         <div class="container">
@@ -125,14 +126,14 @@
           </ul>
         </div>
       </section>
-      <!--about us-->
+      <!-------------about us----------------------->
       <section class="about-us">
         <div class="container">
           <h2 class="secondary-header">Czym się zajmujemy</h2>
 
           <ul class="about list">
             <li class="about__item">
-              <div class="thumb">
+              
                 <img
                   class="about__photo"
                   src="./images/about-us/about-us-img1.jpg"
@@ -140,12 +141,13 @@
                   width="370"
                   height="294"
                 />
-                <p class="about__label">Aplikacje komputerowe</p>
-              </div>
+                <div class="about__header-wrapper"><p class="about__label">Aplikacje komputerowe</p></div>
+                
+              
             </li>
 
             <li class="about__item">
-              <div class="thumb">
+              
                 <img
                   class="about__photo"
                   src="./images/about-us/about-us-img2.jpg"
@@ -154,11 +156,11 @@
                   height="294"
                 />
                 <p class="about__label">Aplikacje mobilne</p>
-              </div>
+              
             </li>
 
             <li class="about__item">
-              <div class="thumb">
+              
                 <img
                   class="about__photo"
                   src="./images/about-us/about-us-img3.jpg"
@@ -167,13 +169,13 @@
                   height="294"
                 />
                 <p class="about__label">Rozwiązania graficzne</p>
-              </div>
+            
             </li>
           </ul>
         </div>
       </section>
       <!--our team-->
-      <section class="workers section">
+      <section class="our-team section">
         <div class="container">
           <h2 class="secondary-header">Nasz zespół</h2>
           <ul class="team list">
@@ -412,16 +414,12 @@
                 >
               </li>
               <li class="address__item">
-                <a
-                  class="address__link"
-                  href="mailto:info@example.com"
+                <a class="address__link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
               <li class="address__item">
-                <a
-                  class="address__link"
-                  href="tel:+48111111111"
+                <a class="address__link" href="tel:+48111111111"
                   >+48 111 111 111</a
                 >
               </li>
