@@ -133,43 +133,38 @@
 
           <ul class="about list">
             <li class="about__item">
-              
-                <img
-                  class="about__photo"
-                  src="./images/about-us/about-us-img1.jpg"
-                  alt="Pisanie na klawiaturze kodu wyswietlającego się na tablecie i ekranie monitora"
-                  width="370"
-                  height="294"
-                />
-                <div class="about__header-wrapper"><p class="about__label">Aplikacje komputerowe</p></div>
-                
-              
+              <img
+                class="about__photo"
+                src="./images/about-us/about-us-img1.jpg"
+                alt="Pisanie na klawiaturze kodu wyswietlającego się na tablecie i ekranie monitora"
+                width="370"
+                height="294"
+              />
+              <div class="about__header-wrapper">
+                <p class="about__label">Aplikacje komputerowe</p>
+              </div>
             </li>
 
             <li class="about__item">
-              
-                <img
-                  class="about__photo"
-                  src="./images/about-us/about-us-img2.jpg"
-                  alt="Projektowanie szablonów stron przystosowanych do smartfonów"
-                  width="370"
-                  height="294"
-                />
-                <p class="about__label">Aplikacje mobilne</p>
-              
+              <img
+                class="about__photo"
+                src="./images/about-us/about-us-img2.jpg"
+                alt="Projektowanie szablonów stron przystosowanych do smartfonów"
+                width="370"
+                height="294"
+              />
+              <p class="about__label">Aplikacje mobilne</p>
             </li>
 
             <li class="about__item">
-              
-                <img
-                  class="about__photo"
-                  src="./images/about-us/about-us-img3.jpg"
-                  alt="Paleta kolorów na ekranie tableta"
-                  width="370"
-                  height="294"
-                />
-                <p class="about__label">Rozwiązania graficzne</p>
-            
+              <img
+                class="about__photo"
+                src="./images/about-us/about-us-img3.jpg"
+                alt="Paleta kolorów na ekranie tableta"
+                width="370"
+                height="294"
+              />
+              <p class="about__label">Rozwiązania graficzne</p>
             </li>
           </ul>
         </div>
@@ -347,7 +342,7 @@
         </div>
       </section>
       <!--our clients-->
-      <section class="users section">
+      <section class="customers section">
         <div class="container">
           <h2 class="secondary-header">Nasi klienci</h2>
           <ul class="clients list">
@@ -399,7 +394,7 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="footer-left-side">
+        <div class="footer-information">
           <a class="logo logo--dark-theme" href="#"
             ><span class="logo__accent-text">Web</span>Studio</a
           >
@@ -460,18 +455,18 @@
           </ul>
         </div>
         <div class="newsletter">
-          <form method="POST" class="newsletter-form">
-            <h3 class="newsletter-header">Zapisz się do newslettera</h3>
-            <div class="newsletter-input">
+          <form method="POST" class="newsletter__form">
+            <h3 class="newsletter__header">Zapisz się do newslettera</h3>
+            <div class="newsletter__input">
               <input
                 type="email"
                 name="email"
                 placeholder="E-mail"
-                class="newsletter-e-mail"
+                class="newsletter__email"
               />
 
-              <button class="newsletter-btn" type="submit">
-                Zapisz się<svg class="icon-send">
+              <button class="btn newsletter__btn" type="submit">
+                Zapisz się<svg class="newsletter__icon">
                   <use href="./images/icons.svg#icon-send"></use>
                 </svg>
               </button>
@@ -484,7 +479,7 @@
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg
-            class="vector-cross"
+            class="close-btn__icon"
             width="11"
             height="11"
             viewBox="0 0 11 11"
@@ -495,80 +490,73 @@
             />
           </svg>
         </button>
-        <form method="POST" class="modal-form">
-          <h2 class="modal-form-title">
-            Zostaw swoje dane w formularzu poniżej
-          </h2>
-          <label for="name" class="modal-label">Imie</label>
-          <div class="modal-input-wrapper">
+        <form method="POST" class="form">
+          <h2 class="form__title">Zostaw swoje dane w formularzu poniżej</h2>
+          <label for="name" class="form__label">Imie</label>
+          <div class="form__wrapper">
             <input
               type="text"
               name="name"
               id="name"
-              class="modal-input"
+              class="form__input"
               required
             />
-            <div class="modal-form-icon">
-              <svg class="icon-name">
-                <use href="./images/icons.svg#icon-name"></use>
-              </svg>
-            </div>
+
+            <svg class="form__icon">
+              <use href="./images/icons.svg#icon-name"></use>
+            </svg>
           </div>
 
-          <label for="telefon" class="modal-label">Telefon</label>
-          <div class="modal-input-wrapper">
+          <label for="telefon" class="form__label">Telefon</label>
+          <div class="form__wrapper">
             <input
               type="tel"
               name="telefon"
               id="telefon"
-              class="modal-input"
+              class="form__input"
               required
             />
-            <div class="modal-form-icon">
-              <svg class="icon-phone">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-            </div>
+
+            <svg class="form__icon">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
           </div>
-          <label for="e-mail" class="modal-label">E-mail</label>
-          <div class="modal-input-wrapper">
-            <input type="email" name="e-mail" id="e-mail" class="modal-input" />
-            <div class="modal-form-icon">
-              <svg class="icon-e-mail">
-                <use href="./images/icons.svg#icon-e-mail"></use>
-              </svg>
-            </div>
+          <label for="e-mail" class="form__label">E-mail</label>
+          <div class="form__wrapper">
+            <input type="email" name="e-mail" id="e-mail" class="form__input" />
+
+            <svg class="form__icon">
+              <use href="./images/icons.svg#icon-e-mail"></use>
+            </svg>
           </div>
-          <label for="komentarz" class="modal-label">Komentarz</label>
+          <label for="komentarz" class="form__label">Komentarz</label>
           <textarea
             name="komentarz"
             id="komentarz"
             cols="30"
             rows="10"
-            class="modal-textarea"
+            class="form__textarea"
             placeholder="Wprowadź tekst"
           ></textarea>
-          <div class="modal-policy-wrapper">
-            <div class="modal-disclaimer-wrapper">
-              <input
-                type="checkbox"
-                id="checkbox"
-                class="modal-checkbox visually-hidden"
-                required
-              />
-              <label for="checkbox" class="policy-label-text"
-                >Oświadczam iż akceptuję &nbsp;
-                <a href="#" class="modal-policy-text-link">Regulamin </a>
-                &nbsp;i&nbsp;
-                <a href="#" class="modal-policy-text-link">
-                  Politykę Prywatności</a
-                >
+          <div class="form__policy">
+            <!-- <div class="modal-disclaimer-wrapper">-->
+            <input
+              type="checkbox"
+              id="checkbox"
+              class="form__checkbox visually-hidden"
+              required
+            />
+            <label for="checkbox" class="form__statement"
+              >Oświadczam iż akceptuję &nbsp;
+              <a href="#" class="form__link">Regulamin </a>
+              &nbsp;i&nbsp;
+              <a href="#" class="form__link"> Politykę Prywatności</a>
 
-                .</label
-              >
-            </div>
-            <button class="modal-btn-form" type="submit">Wyślij</button>
+              .</label
+            >
           </div>
+          <!--</div>-->
+          <button class="btn form__btn" type="submit">Wyślij</button>
         </form>
       </div>
     </div>
