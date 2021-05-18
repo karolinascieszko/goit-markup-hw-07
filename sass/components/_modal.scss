@@ -21,6 +21,12 @@
     border-radius: 50%;
     cursor: pointer;
 }
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
 .form__title {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
