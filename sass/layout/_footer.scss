@@ -4,7 +4,9 @@
     background-color: $background-dark-color;
 }
 
-
+.address {
+    padding-top: 20px;
+}
 
 .address__link {
     font-size: 14px;
@@ -21,9 +23,7 @@
     }
 }
 
-.address {
-    padding-top: 20px;
-}
+
 .address__link--theme{
     color: $white-color;
 }
