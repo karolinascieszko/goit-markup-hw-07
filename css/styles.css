@@ -82,7 +82,7 @@ img {
   color: var(--font-on-dark-theme-color);
 }*/
 
-.menu__link,
+/* .menu__link,
 .contact__link {
   font-weight: 500;
   font-size: 14px;
@@ -94,8 +94,8 @@ img {
   transition-property: color, fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.menu__link:hover,
+} */
+/* .menu__link:hover,
 .menu__link:focus,
 .menu__link:active,
 .btn:focus,
@@ -104,13 +104,13 @@ img {
 .address__link:focus,
 .address__link:active {
   color: var(--main-color);
-}
-.contact__link {
+} */
+/* .contact__link {
   color: var(--font-in-description-color);
-}
-.footer {
+} */
+/* .footer {
   background-color: var(--background-color-dark);
-}
+} */
 .header,
 .advantages,
 .about-us,
@@ -131,7 +131,7 @@ img {
 ::selection {
   background-color: var(--background-color-selection);
 }
-.decoration::after {
+/* .decoration::after {
   content: '';
   display: flex;
   position: absolute;
@@ -141,7 +141,7 @@ img {
   border-radius: 2px;
   background-color: var(--main-color);
   margin-right: 20px;
-}
+} */
 
 /*===== END COMPONENTS=====*/
 /*===== HEADER =====*/
@@ -442,15 +442,15 @@ img {
 /*===== END OUR CLIENTS =====*/
 
 /*===== FOOTER =====*/
-.footer {
+/* .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-}
+} */
 /*.address-information {
   font-style: normal;
 }*/
 
-.address__link {
+/* .address__link {
   font-size: 14px;
   line-height: 1.714;
   color: var(--font-contact-footer-color);
@@ -461,7 +461,7 @@ img {
 }
 .address {
   padding-top: 20px;
-}
+} */
 /* .social__header {
   font-size: 14px;
   line-height: 1.143;
@@ -478,14 +478,14 @@ img {
   );
 } */
 
-.footer .container {
+/* .footer .container {
   display: flex;
   align-items: baseline;
-}
-.social-links {
+} */
+/* .social-links {
   margin-left: 70px;
-}
-.newsletter {
+} */
+/* .newsletter {
   margin-left: 70px;
 }
 .newsletter__header {
@@ -529,7 +529,7 @@ img {
   border-color: var(--main-color);
   outline: none;
   cursor: pointer;
-}
+} */
 /*.newsletter__btn {
   display: flex;
   justify-content: center;
@@ -550,11 +550,11 @@ img {
 .newsletter__btn:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }*/
-.newsletter__icon {
+/* .newsletter__icon {
   width: 24px;
   height: 24px;
   margin-left: 24px;
-}
+} */
 
 /*===== PORTFOLIO =====*/
 .buttons {
