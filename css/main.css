@@ -122,9 +122,7 @@ img {
 }
 
 .form__btn {
-  margin-top: 30px;
-  letter-spacing: 0.06em;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 
 .secondary-header {
@@ -306,6 +304,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 }
 
 .form__statement::before {
@@ -591,6 +590,10 @@ img {
 
 .team__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.our-team {
+  background-color: #F5F4FA;
 }
 
 .clients {
