@@ -16,36 +16,34 @@
     line-height: 1.625;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--main-font-color);
+    color: $main-font-color;
     border-radius: 4px;
     transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.buttons__item:not(:last-child) {
-    padding-right: 8px;
-}
-
-.buttons__name:hover,
-.buttons__name:focus,
-.buttons__name:active {
-    color: var(--font-on-dark-theme-color);
-    background-color: var(--main-color);
-    cursor: pointer;
-}
-
-.buttons__item:hover,
-.buttons__item:focus {
-    box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+    &:hover,
+    &:focus
+   {
+        color: $white-color;
+        background-color: $main-color;
+        cursor: pointer;
+    }
 }
 
 .buttons__item {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:not(:last-child) {
+        padding-right: 8px;
+    }
+    &:hover,
+    &:focus {
+        box-shadow: 10px 10px 8px 2px rgba(0, 0, 0, 0.3);
+    }
+
 }
 
-/*CARDS*/
+//                        CARDS
 .cards {
     margin-bottom: 94px;
 }
