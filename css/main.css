@@ -651,6 +651,10 @@ img {
   padding-top: 20px;
 }
 
+.address__link--theme {
+  color: #fff;
+}
+
 .newsletter {
   margin-left: 70px;
 }
