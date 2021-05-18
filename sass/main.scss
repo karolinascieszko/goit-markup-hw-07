@@ -1,4 +1,5 @@
 @import "./utils/visually-hidden";
+@import "./utils/variables";
 @import "./base/common";
 @import "./base/container";
 @import "./base/section";
@@ -8,7 +9,8 @@
 @import "./components/secondary-header";
 @import "./components/logo";
 @import "./components/modal";
-@import "./components/social-link";
+@import "./components/main-header";
+@import "./components/social-list";
 
 @import "./layout/header";
 @import "./layout/hero";

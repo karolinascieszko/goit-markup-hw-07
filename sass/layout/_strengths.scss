@@ -11,15 +11,15 @@
     line-height: 1.143;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--main-font-color);
+    color: $main-font-color;
     margin-bottom: 10px;
     width: 270px;
     padding-top: 30px;
+    &__header:not(:last-child) {
+        margin-right: 30px;
+    }
 }
 
-.advantages__header:not(:last-child) {
-    margin-right: 30px;
-}
 
 .advantages__description {
     display: flex;
@@ -27,7 +27,7 @@
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
-    color: var(--font-in-description-color);
+    color: $description-font-color;
     width: 270px;
 }
 
@@ -41,7 +41,7 @@
     display: flex;
     width: 270px;
     height: 120px;
-    background-color: var(--background-color-advantages-icons);
+    background-color: #f5f4fa;
     align-items: center;
     justify-content: center;
 }
